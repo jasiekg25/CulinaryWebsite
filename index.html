@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title>John'sRecipe</title>
+</head>
+<body>
+
+<header>
+    <img src='header_bg.jpg' alt=""/>
+    <div class="logo1">John'sRecipe</div>
+    <ol>
+        <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="#Omnie">O mnie</a></li>
+                <li><a href="#recipe">Przepisy</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </li>
+    </ol>
+    <div class="header2">
+        <h3>O mnie i przepisach słów parę</h3>
+        <p>
+            Choć moje ambicje zostania szefem kuchni zostały schowane na dalszy plan...
+        </p>
+        <a href="#kuchnia">Czytaj więcej ...</a>
+    </div>
+</header>
+
+<main>
+
+    <article id="Omnie">
+        <div class="text">
+            <h2>Jan Gargas</h2>
+            <p>Kuchnia to moja pasja od wielu lat. Od czasów kiedy byłem małym brzdącem chciałem zostać szefem kuchni.
+                Niestety, twarde życie zmusiło mnie do bardziej prozaicznego wyboru zawodu, więc jako rekompensatę
+                stworzyłem blog o moich kuchennych perypetiach. Miłego czytania ;D</p>
+        </div>
+        <img src="kich_chef.png" alt="">
+    </article>
+    <article id="kuchnia">
+        <img src="about_me.jpg" alt=""/>
+        <div class="text">
+            <h2>O mnie i przepisach słów parę</h2>
+            <p>Choć moje ambicje zostania szefem kuchni zostały schowane na dalszy plan, to wciąż jednak wyznaję zasadę
+                - prosto, smacznie i szybko. Te trzy słowa są kwintesencją wszystkich przepisów tu zgromadzonych </p>
+        </div>
+    </article>
+
+    <h1 id="recipe">Przepisy</h1>
+    <button onclick="showForm()" id="dodawaniePrzepisu">
+        Dodaj <br/>
+        przepis
+    </button>
+    <section class="recipes">
+        <div class="blok" id="b0">
+            <button class="showMore" onclick="showMore(0)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f00" src='2.jpg' alt="">
+                <img class="foto1" id="f01" src='2.1.jpg' alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Naleśniki</h3>
+                <div class="more" id="more0">
+                    <p>Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać
+                        roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania
+                        patelni przed smażeniem każdego naleśnika).
+                        Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na
+                        drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.</p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>1 szklanka mąki pszennej</li>
+                        <li>1 szklanka mleka</li>
+                        <li>3/4 szklanki wody</li>
+                        <li>2 jajka</li>
+                        <li>sól</li>
+                        <li>olej</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blok" id="b1">
+            <button class="showMore" onclick="showMore(1)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f10" src='3.jpg' alt="">
+                <img class="foto1" id="f11" src='3.1.jpg' alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Omlet ze szpinakiem</h3>
+                <div class="more" id="more1">
+                    <p> Szpinak opłukać i osuszyć. Na patelni o średnicy dna ok. 24 cm podgrzać łyżkę masła, dodać
+                        starty
+                        czosnek i chwilę podsmażyć. Włożyć szpinak i mieszając smażyć go przez ok. 1 - 2 minuty aż
+                        zwiędnie.
+                        W międzyczasie doprawić solą.
+                        Jajka energicznie roztrzepać widelcem z dodatkiem mleka, soli i pieprzu (w ten sposób
+                        napowietrzamy
+                        masę jajeczną). Dodać szpinak z patelni oraz starty ser, wymieszać łyżką.
+                        Na patelni podgrzać drugą łyżkę masła, rozprowadzić je po całej powierzchni patelni. Wlać masę
+                        jajeczną ze szpinakiem i poukładać połówki pomidorków koktajlowych.
+                        Ustawić mały ogień, przykryć patelnię pokrywą i podgrzewać aż masa się zetnie przez ok. 5 minut.
+                        Alternatywnie - dla jeszcze lepszego efektu - po dwóch minutach podsmażania (bez przykrycia)
+                        można
+                        też wstawić patelnię do piekarnika nagrzanego do 180 st. C.</p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>100g szpinaku</li>
+                        <li>2 łyżki masła</li>
+                        <li>1/2 ząbku czosnku</li>
+                        <li>3 jajka</li>
+                        <li>5 łyżek mleka</li>
+                        <li>sól i pieprz</li>
+                        <li>kilka pomidorów koktajlowych</li>
+                        <li>40g tartego sera</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blok" id="b2">
+            <button class="showMore" onclick="showMore(2)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f20" src="5.jpg" alt="">
+                <img class="foto1" id="f21" src="5.1.jpg" alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Racuchy</h3>
+                <div class="more" id="more2">
+                    <p> Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać
+                        roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania
+                        patelni przed smażeniem każdego naleśnika).
+                        Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na
+                        drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.
+                        Wykładać po około łyżce ciasta i po 3 plasterki jabłek na 1 placka na rozgrzany tłuszcz na
+                        patelni i
+                        smażyć przez około 1,5 minuty na złoty kolor. Przewrócić na drugą stronę i powtórzyć smażenie.
+                        .</p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>1 szklanka mąki pszennej</li>
+                        <li>1 szklanka mleka</li>
+                        <li>3/4 szklanki wody</li>
+                        <li>2 jajka</li>
+                        <li>sól</li>
+                        <li>olej</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blok" id="b3">
+            <button class="showMore" onclick="showMore(3)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f30" src="4.jpg" alt="">
+                <img class="foto1" id="f31" src="4.1.jpg" alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Nuggetsy</h3>
+                <div class="more" id="more3">
+                    <p>Szpinak opłukać i osuszyć. Na patelni o średnicy dna ok. 24 cm podgrzać łyżkę masła, dodać
+                        starty
+                        czosnek i chwilę podsmażyć. Włożyć szpinak i mieszając smażyć go przez ok. 1 - 2 minuty aż
+                        zwiędnie.
+                        W międzyczasie doprawić solą.
+                        Jajka energicznie roztrzepać widelcem z dodatkiem mleka, soli i pieprzu (w ten sposób
+                        napowietrzamy
+                        masę jajeczną). Dodać szpinak z patelni oraz starty ser, wymieszać łyżką.
+                        Na patelni podgrzać drugą łyżkę masła, rozprowadzić je po całej powierzchni patelni. Wlać
+                        masę
+                        jajeczną ze szpinakiem i poukładać połówki pomidorków koktajlowych.
+                        Ustawić mały ogień, przykryć patelnię pokrywą i podgrzewać aż masa się zetnie przez ok. 5
+                        minut.
+                        Alternatywnie - dla jeszcze lepszego efektu - po dwóch minutach podsmażania (bez przykrycia)
+                        można
+                        też wstawić patelnię do piekarnika nagrzanego do 180 st. C.</p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>100g szpinaku</li>
+                        <li>2 łyżki masła</li>
+                        <li>1/2 ząbku czosnku</li>
+                        <li>3 jajka</li>
+                        <li>5 łyżek mleka</li>
+                        <li>sól i pieprz</li>
+                        <li>kilka pomidorów koktajlowych</li>
+                        <li>40g tartego sera</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blok" id="b4">
+            <button class="showMore" onclick="showMore(4)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f40" src="6.jpg" alt="">
+                <img class="foto1" id="f41" src="6.1.jpg" alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Kotlet Schabowy</h3>
+                <div class="more" id="more4">
+                    <p> Szpinak opłukać i osuszyć. Na patelni o średnicy dna ok. 24 cm podgrzać łyżkę masła, dodać
+                        starty
+                        czosnek i chwilę podsmażyć. Włożyć szpinak i mieszając smażyć go przez ok. 1 - 2 minuty aż
+                        zwiędnie.
+                        W międzyczasie doprawić solą.
+                        Jajka energicznie roztrzepać widelcem z dodatkiem mleka, soli i pieprzu (w ten sposób
+                        napowietrzamy
+                        masę jajeczną). Dodać szpinak z patelni oraz starty ser, wymieszać łyżką.
+                        Na patelni podgrzać drugą łyżkę masła, rozprowadzić je po całej powierzchni patelni. Wlać
+                        masę
+                        jajeczną ze szpinakiem i poukładać połówki pomidorków koktajlowych.
+                        Ustawić mały ogień, przykryć patelnię pokrywą i podgrzewać aż masa się zetnie przez ok. 5
+                        minut.
+                        Alternatywnie - dla jeszcze lepszego efektu - po dwóch minutach podsmażania (bez przykrycia)
+                        można
+                        też wstawić patelnię do piekarnika nagrzanego do 180 st. C.
+                        </ul></p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>makaron 300 g</li>
+                        <li>krewetki tiger 300 g</li>
+                        <li>pomidorki koktajlowe 250 g</li>
+                        <li>białe wino 50 ml</li>
+                        <li>czosnek 1 ząbek</li>
+                        <li>oliwa z oliwek</li>
+                        <li>natka pietruszki</li>
+                        <li>sól, pieprz</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blok" id="b5">
+            <button class="showMore" onclick="showMore(5)"></button>
+            <div class="fotos">
+                <img class="foto0" id="f50" src="7.jpg" alt="">
+                <img class="foto1" id="f51" src="7.1.jpg" alt="">
+            </div>
+            <button class="btn-remove">X</button>
+            <div>
+                <h3>Makaron z grzybami i sosem Alfredo</h3>
+                <div class="more" id="more5">
+                    <p> Szpinak opłukać i osuszyć. Na patelni o średnicy dna ok. 24 cm podgrzać łyżkę masła, dodać
+                        starty
+                        czosnek i chwilę podsmażyć. Włożyć szpinak i mieszając smażyć go przez ok. 1 - 2 minuty aż
+                        zwiędnie.
+                        W międzyczasie doprawić solą. Jajka energicznie roztrzepać widelcem z dodatkiem mleka, soli i
+                        pieprzu (w ten sposób
+                        napowietrzamy
+                        masę jajeczną). Dodać szpinak z patelni oraz starty ser, wymieszać łyżką.
+                        Na patelni podgrzać drugą łyżkę masła, rozprowadzić je po całej powierzchni patelni. Wlać
+                        masę
+                        jajeczną ze szpinakiem i poukładać połówki pomidorków koktajlowych.
+                        Szpinak opłukać i osuszyć. Na patelni o średnicy dna ok. 24 cm podgrzać łyżkę masła, dodać
+                        starty
+                        czosnek i chwilę podsmażyć. Włożyć szpinak i mieszając smażyć go przez ok. 1 - 2 minuty aż
+                        zwiędnie.
+                        W międzyczasie doprawić solą.
+                        Jajka energicznie roztrzepać widelcem z dodatkiem mleka, soli i pieprzu (w ten sposób
+                        napowietrzamy
+                        masę jajeczną). Dodać szpinak z patelni oraz starty ser, wymieszać łyżką.
+                        Ustawić mały ogień, przykryć patelnię pokrywą i podgrzewać aż masa się zetnie przez ok. 5
+                        minut.
+                        Alternatywnie - dla jeszcze lepszego efektu - po dwóch minutach podsmażania (bez przykrycia)
+                        można
+                        też wstawić patelnię do piekarnika nagrzanego do 180 st. C.</p>
+                    <h4>Składniki:</h4>
+                    <ul>
+                        <li>starty ser mozzarella 200 g</li>
+                        <li>pomidory 150 g</li>
+                        <li>czarne oliwki 40 g</li>
+                        <li>szynka 100 g</li>
+                        <li>koncentrat pomidorowy 100 g</li>
+                        <li>mąka 1 kg</li>
+                        <li>woda 500 ml</li>
+                        <li>cukier 25 g</li>
+                        <li>sól 20 g</li>
+                        <li>olej 50 ml</li>
+                        <li>drożdże 8 g</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<src = "1."
+
+<hr id="line">
+<footer id="Kontakt">
+
+    <div class="logo2">John'sRecipe</div>
+    <div class="other">
+        <p> 33-311 Wielogłowy 146 </p>
+        <p>Tel: 12 345 67 89</p>
+    </div>
+    <div class="other">
+        <p>e-mail: John'sRecipe@gmail.com</p>
+    </div>
+</footer>
+
+<div class="formularz">
+    <div class="form-page">
+        <h1>Twój przepis</h1>
+        <form action="post" id="form">
+            <input
+                    type="text"
+                    placeholder="Nazwa przepisu"
+                    id="nazwa"
+                    required
+                    minlength="3"
+                    maxlength="35"
+            />
+
+            <input
+                    type="text"
+                    placeholder="Składniki i ilość (oddzielone przecinkiem)"
+                    id="skladniki"
+                    minlength="3"
+                    maxlength="80"
+                    required
+            />
+
+
+            <input type="url" placeholder="Obraz główny URL" id="url" required/>
+            <input type="url" placeholder="Obraz otwierający przepis URL" id="url2" required/>
+
+
+            <textarea
+                    name=""
+                    cols="10"
+                    rows="8"
+                    placeholder="Opis przepisu"
+                    id="opis"
+                    required
+                    minlength="10"
+                    maxlength="200"
+            ></textarea>
+
+
+            <button type="submit" id="submitBtn">Dodaj</button>
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+<script src="applications.js"></script>
+</body>
+</html>
